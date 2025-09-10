@@ -1,0 +1,63 @@
+.tamagotchiContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Sigmar', sans-serif;
+}
+
+.selectionButtons {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.marimoButton {
+	padding: 10px 20px;
+	border-radius: 15px;
+	border: 2px solid #7FCF7F;
+	background: #A8E6A2;
+	cursor: pointer;
+}
+
+.marimoButton:hover {
+	background: #8FD88D;
+}
+
+.eggFrame {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.eggImage {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 20px;
+}
+
+.deleteButton {
+	margin-top: 20px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	border: 2px solid #e57373;
+	background: #ffcccc;
+	cursor: pointer;
+}
+
+.deleteButton:hover {
+	background: #ff9999;
+}
+
+.marimoEggImage {
+	width: 300px;
+	height: auto;
+	object-fit: contain;
+	border-radius: 20px;
+}

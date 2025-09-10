@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+body {
+	background-image: url('/backgroundpage.svg');
+	background-repeat: no-repeat;
+	object-fit: contain;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(240, 255, 240, 0.5);
+	/* fond clair et doux */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal {
+	background: #f0fff0;
+	/* vert clair style marimo */
+	border-radius: 40px;
+	/* coins très arrondis */
+	padding: 30px;
+	width: 500px;
+	/* quasi carré */
+	max-width: 90%;
+	border: 4px solid #A8E6A2;
+	/* bordure douce */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modal-title {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
+	letter-spacing: 4px;
+	font-family: 'Sigmar', sans-serif;
+}
+
+.columns-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	gap: 20px;
+	font-family: 'Sigmar', sans-serif;
+	font-size: 12px;
+	letter-spacing: 2px;
+
+}
+
+.column {
+	flex: 1;
+	background: #d0f0c0;
+	border-radius: 30px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* centre tous les éléments horizontalement */
+	gap: 15px;
+}
+
+.column-title {
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.input {
+	width: 100%;
+	/* prend toute la largeur de la colonne */
+	max-width: 200px;
+	/* limite pour que ce soit joli et centré */
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #a5d6a7;
+	outline: none;
+	font-size: 14px;
+}
+
+.input:focus {
+	border-color: #66bb6a;
+	box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+}
+
+.marimo-button {
+	letter-spacing: 2px;
+	background: linear-gradient(145deg, #A8E6A2, #7FCF7F);
+	border: 4px solid #A8E6A2;
+	border-radius: 20px;
+	padding: 10px 0;
+	font-size: 14px;
+	cursor: pointer;
+	transition: transform 0.2s, background 0.2s;
+	width: 100%;
+	font-family: 'Sigmar', sans-serif;
+	max-width: 120px;
+}
+
+.marimo-button:hover {
+	transform: scale(1.05);
+	background: linear-gradient(145deg, #C0F0B0, #8FD88D);
+}
